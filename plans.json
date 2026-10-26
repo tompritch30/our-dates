@@ -1,0 +1,209 @@
+[
+ {
+  "id": "bund",
+  "title": "Back on the Bund",
+  "when": "Any Saturday",
+  "why": "Shanghai, all within a ten-minute walk.",
+  "steps": [
+   {
+    "time": "12:30",
+    "place": "din-tai-fung",
+    "what": "Xiaolongbao to start"
+   },
+   {
+    "time": "14:30",
+    "place": "yushu-tea-gallery",
+    "what": "A three-tea tasting"
+   },
+   {
+    "time": "17:00",
+    "what": "Art Deco cocktails, a nod to the Peace Hotel",
+    "place": "bar-americain"
+   },
+   {
+    "time": "19:00",
+    "place": "song-he-lou",
+    "what": "Suzhou noodles"
+   },
+   {
+    "time": "21:30",
+    "place": "opium",
+    "what": "Nightcap behind the jade door"
+   }
+  ]
+ },
+ {
+  "id": "candlelit",
+  "title": "Candlelit Christmas",
+  "when": "From 20 Nov",
+  "why": "The most atmospheric evening in London in December.",
+  "steps": [
+   {
+    "time": "18:00",
+    "place": "dennis-severs-house-at-christmas",
+    "what": "Silent evening visit"
+   },
+   {
+    "time": "19:30",
+    "place": "legado",
+    "what": "Chef's counter"
+   },
+   {
+    "time": "22:00",
+    "place": "satan-s-whiskers",
+    "what": "Nightcap"
+   }
+  ]
+ },
+ {
+  "id": "riviera",
+  "title": "Art and martinis",
+  "when": "A Friday",
+  "why": "Paintings, then a dress-up night a short walk apart.",
+  "steps": [
+   {
+    "time": "18:00",
+    "place": "painting-the-french-riviera-royal-academy",
+    "what": "Friday late"
+   },
+   {
+    "time": "20:00",
+    "place": "brutes-of-mayfair",
+    "what": "Build-your-own martini"
+   },
+   {
+    "time": "21:00",
+    "place": "dakadaka",
+    "what": "Live-fire Georgian"
+   }
+  ]
+ },
+ {
+  "id": "kew",
+  "title": "Christmas at Kew",
+  "when": "3 or 9 Dec (adults only)",
+  "why": "Lights without the buggies.",
+  "steps": [
+   {
+    "time": "18:00",
+    "place": "christmas-at-kew-adults-only-nights",
+    "what": "The light trail"
+   },
+   {
+    "time": "21:15",
+    "place": "kiln",
+    "what": "Walk-in Thai at the counter"
+   }
+  ]
+ },
+ {
+  "id": "dark",
+  "title": "Dinner in the dark",
+  "when": "Any evening",
+  "why": "Taste only, then talk about it over a martini.",
+  "steps": [
+   {
+    "time": "18:30",
+    "place": "vesper",
+    "what": "Martini first"
+   },
+   {
+    "time": "19:30",
+    "place": "dans-le-noir",
+    "what": "Dinner in total darkness"
+   }
+  ]
+ },
+ {
+  "id": "slow-sunday",
+  "title": "Slow Sunday, east",
+  "when": "A Sunday",
+  "why": "Flowers, a long lunch, then a glass.",
+  "steps": [
+   {
+    "time": "09:30",
+    "place": "columbia-road-flower-market",
+    "what": "Flowers"
+   },
+   {
+    "time": "11:30",
+    "place": "rochelle-canteen",
+    "what": "Long lunch"
+   },
+   {
+    "time": "15:00",
+    "place": "sager-wilde",
+    "what": "A glass of wine"
+   }
+  ]
+ },
+ {
+  "id": "shanghai-home",
+  "title": "Shanghai at home",
+  "when": "A night in",
+  "why": "Fold dumplings together, then Wong Kar-wai.",
+  "steps": [
+   {
+    "time": "18:30",
+    "place": "dumpling-folding-night",
+    "what": "Fold, steam, eat"
+   },
+   {
+    "time": "19:30",
+    "place": "shanghai-scallion-oil-noodles",
+    "what": "On the side"
+   },
+   {
+    "time": "20:30",
+    "place": "wong-kar-wai-double-bill",
+    "what": "In the Mood for Love"
+   }
+  ]
+ },
+ {
+  "id": "tree-night",
+  "title": "Tree and baubles",
+  "when": "Late Nov or Dec",
+  "why": "Choose a tree together, then paint the baubles to hang on it.",
+  "steps": [
+   {
+    "time": "14:00",
+    "place": "pines-and-needles-christmas-tree-pitches",
+    "what": "Pick the tree"
+   },
+   {
+    "time": "18:30",
+    "place": "bauble-paint-and-sip-box",
+    "what": "Paint baubles"
+   },
+   {
+    "time": "20:30",
+    "place": "christmas-comfort-double-bill",
+    "what": "The Holiday, then Love Actually"
+   }
+  ]
+ },
+ {
+  "id": "box-hill",
+  "title": "Box Hill and a fire",
+  "when": "A winter weekend (drive)",
+  "why": "Big views, stepping stones, then a 16th-century pub with a fire.",
+  "steps": [
+   {
+    "time": "10:30",
+    "place": "box-hill-and-the-stepping-stones-walk",
+    "what": "The loop"
+   },
+   {
+    "time": "13:00",
+    "place": "the-running-horses",
+    "what": "Lunch by the fire"
+   },
+   {
+    "time": "15:00",
+    "place": "denbies-vineyard-tour-and-tasting",
+    "what": "A tasting on the way home"
+   }
+  ]
+ }
+]

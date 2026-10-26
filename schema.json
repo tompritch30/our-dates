@@ -1,0 +1,179 @@
+{
+ "$schema": "http://json-schema.org/draft-07/schema#",
+ "title": "Our Next Dates — place",
+ "type": "array",
+ "items": {
+  "type": "object",
+  "required": [
+   "id",
+   "name",
+   "type",
+   "area",
+   "region",
+   "slot",
+   "dress",
+   "spend",
+   "tags",
+   "note",
+   "source",
+   "status"
+  ],
+  "additionalProperties": false,
+  "properties": {
+   "id": {
+    "type": "string",
+    "pattern": "^[a-z0-9-]+$",
+    "description": "Stable slug. Plans point at this."
+   },
+   "name": {
+    "type": "string"
+   },
+   "type": {
+    "type": "string",
+    "description": "Must match an id in config.types (lunch, coffee, dinner, drinks, activity, event)."
+   },
+   "area": {
+    "type": "string",
+    "description": "Neighbourhood shown under the name."
+   },
+   "region": {
+    "enum": [
+     "C",
+     "N",
+     "E",
+     "S",
+     "W",
+     "SY",
+     "H"
+    ],
+    "description": "London regions, SY = Surrey (drive), H = at home"
+   },
+   "slot": {
+    "enum": [
+     "day",
+     "eve",
+     "both"
+    ],
+    "description": "When it works: daytime, evening, or both."
+   },
+   "dress": {
+    "enum": [
+     1,
+     2,
+     3
+    ],
+    "description": "1 come as you are, 2 smart-casual, 3 dress up."
+   },
+   "spend": {
+    "enum": [
+     1,
+     2,
+     3,
+     4
+    ],
+    "description": "Rough cost per person, 1 cheapest."
+   },
+   "cuisine": {
+    "type": "string",
+    "description": "Used to keep plans varied. Meals only."
+   },
+   "tags": {
+    "type": "array",
+    "items": {
+     "type": "string"
+    },
+    "description": "Free tags that mood rules read, e.g. shanghai, art, insider, new, vibe, hot."
+   },
+   "note": {
+    "type": "string",
+    "description": "One or two sentences, in our voice."
+   },
+   "tip": {
+    "type": "string"
+   },
+   "lat": {
+    "type": "number"
+   },
+   "lng": {
+    "type": "number"
+   },
+   "maps_query": {
+    "type": "string",
+    "description": "What to search in Google Maps for photos and directions."
+   },
+   "image": {
+    "type": "string",
+    "format": "uri",
+    "description": "Optional. Venue's own preview image."
+   },
+   "dates": {
+    "type": "object",
+    "properties": {
+     "from": {
+      "type": "string",
+      "format": "date"
+     },
+     "to": {
+      "type": "string",
+      "format": "date"
+     },
+     "text": {
+      "type": "string"
+     }
+    },
+    "description": "Optional. For events that only run for a while."
+   },
+   "source": {
+    "type": "object",
+    "required": [
+     "name",
+     "url"
+    ],
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "url": {
+      "type": "string",
+      "format": "uri"
+     }
+    }
+   },
+   "status": {
+    "enum": [
+     "active",
+     "closed",
+     "hidden"
+    ]
+   },
+   "added": {
+    "type": "string",
+    "format": "date"
+   },
+   "kind": {
+    "enum": [
+     "cook",
+     "sweet",
+     "watch",
+     "play",
+     "make",
+     "treat"
+    ],
+    "description": "Night-in only."
+   },
+   "time": {
+    "type": "string",
+    "description": "Rough duration, mainly for nights in."
+   },
+   "website": {
+    "type": "string",
+    "format": "uri",
+    "description": "Venue's own site."
+   },
+   "book": {
+    "type": "string",
+    "description": "How and when to book, e.g. 'Opens 28 days ahead on SevenRooms'."
+   }
+  }
+ }
+}

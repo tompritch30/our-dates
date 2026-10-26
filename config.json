@@ -1,0 +1,689 @@
+{
+ "version": 1,
+ "copy": {
+  "eyebrow": "For my juicebox",
+  "title": "Our next dates",
+  "intro": "Tell it the mood and it plans the date. Or browse everything and heart what you like.",
+  "sendPicks": "Send on WhatsApp",
+  "requestTitle": "Request this date",
+  "picksMessage": "My date picks ♥",
+  "requestMessage": "Date request ♥",
+  "footer": "More ideas get added over time."
+ },
+ "regions": [
+  {
+   "id": "C",
+   "label": "Central"
+  },
+  {
+   "id": "N",
+   "label": "North"
+  },
+  {
+   "id": "E",
+   "label": "East"
+  },
+  {
+   "id": "S",
+   "label": "South"
+  },
+  {
+   "id": "W",
+   "label": "West"
+  },
+  {
+   "id": "SY",
+   "label": "Surrey (drive)"
+  }
+ ],
+ "types": [
+  {
+   "id": "lunch",
+   "label": "Lunch",
+   "color": "#B8654F"
+  },
+  {
+   "id": "coffee",
+   "label": "Coffee & bakes",
+   "color": "#C9A27E"
+  },
+  {
+   "id": "dinner",
+   "label": "Dinner",
+   "color": "#5A1830"
+  },
+  {
+   "id": "drinks",
+   "label": "Drinks",
+   "color": "#8C4A6B"
+  },
+  {
+   "id": "activity",
+   "label": "Things to do",
+   "color": "#3F5E57"
+  },
+  {
+   "id": "event",
+   "label": "Happening soon",
+   "color": "#A2493A"
+  },
+  {
+   "id": "nightin",
+   "label": "Night in",
+   "color": "#C98A7E"
+  }
+ ],
+ "dress": {
+  "1": "Come as you are",
+  "2": "Smart-casual",
+  "3": "Dress up!!!!"
+ },
+ "spend": {
+  "1": "Easy",
+  "2": "Easy",
+  "3": "Treat",
+  "4": "Splurge"
+ },
+ "moods": [
+  {
+   "id": "shanghai",
+   "label": "A taste of Shanghai",
+   "rule": {
+    "tags": [
+     "shanghai"
+    ]
+   }
+  },
+  {
+   "id": "christmas",
+   "label": "Christmassy",
+   "rule": {
+    "tags": [
+     "christmas"
+    ]
+   }
+  },
+  {
+   "id": "art",
+   "label": "Arty",
+   "rule": {
+    "tags": [
+     "art"
+    ]
+   }
+  },
+  {
+   "id": "unusual",
+   "label": "Something unusual",
+   "rule": {
+    "tags": [
+     "insider"
+    ]
+   }
+  },
+  {
+   "id": "dressup",
+   "label": "Dress up",
+   "rule": {
+    "dressMin": 3
+   }
+  },
+  {
+   "id": "lively",
+   "label": "Lively",
+   "rule": {
+    "any": [
+     {
+      "tags": [
+       "vibe",
+       "hot"
+      ]
+     },
+     {
+      "text": [
+       "buzzy",
+       "loud",
+       "party",
+       "packed",
+       "lively",
+       "riotous"
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "cosy",
+   "label": "Cosy",
+   "rule": {
+    "any": [
+     {
+      "tags": [
+       "cosy"
+      ]
+     },
+     {
+      "all": [
+       {
+        "dressMax": 2
+       },
+       {
+        "text": [
+         "candle",
+         "cosy",
+         "intimate",
+         "tiny",
+         "small",
+         "calm",
+         "quiet",
+         "wine bar",
+         "fireplace",
+         "neighbourhood",
+         "fire"
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "new",
+   "label": "Newly opened",
+   "rule": {
+    "tags": [
+     "new"
+    ]
+   }
+  },
+  {
+   "id": "active",
+   "label": "Active",
+   "rule": {
+    "tags": [
+     "active",
+     "walk"
+    ]
+   }
+  },
+  {
+   "id": "chill",
+   "label": "Chill",
+   "rule": {
+    "tags": [
+     "chill",
+     "walk"
+    ]
+   }
+  }
+ ],
+ "browse": {
+  "filters": [
+   {
+    "id": "type",
+    "label": "What",
+    "source": "types"
+   },
+   {
+    "id": "kind",
+    "label": "Night in",
+    "source": "kinds",
+    "when": {
+     "type": "nightin"
+    }
+   },
+   {
+    "id": "mood",
+    "label": "Mood",
+    "source": "moods"
+   },
+   {
+    "id": "region",
+    "label": "Where",
+    "source": "regions"
+   }
+  ],
+  "sort": [
+   "mood",
+   "new"
+  ]
+ },
+ "map": {
+  "center": [
+   51.515,
+   -0.11
+  ],
+  "zoom": 12,
+  "tiles": "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+  "attribution": "© OpenStreetMap contributors © CARTO"
+ },
+ "planner": {
+  "questions": [
+   {
+    "id": "when",
+    "label": "When",
+    "options": [
+     {
+      "id": "eve",
+      "label": "An evening"
+     },
+     {
+      "id": "day",
+      "label": "Daytime"
+     },
+     {
+      "id": "full",
+      "label": "The whole day"
+     },
+     {
+      "id": "in",
+      "label": "A night in"
+     }
+    ]
+   },
+   {
+    "id": "where",
+    "label": "Where",
+    "options": "regions",
+    "any": "Anywhere"
+   },
+   {
+    "id": "travel",
+    "label": "Getting around",
+    "options": "travel"
+   },
+   {
+    "id": "mood",
+    "label": "Mood",
+    "options": "moods",
+    "any": "Surprise me"
+   },
+   {
+    "id": "spend",
+    "label": "Spend",
+    "options": [
+     {
+      "id": "easy",
+      "label": "Easy",
+      "spendMax": 2
+     },
+     {
+      "id": "treat",
+      "label": "Treat",
+      "spendMax": 3
+     },
+     {
+      "id": "splurge",
+      "label": "Splurge",
+      "spendMax": 4,
+      "prefer": 3
+     }
+    ]
+   }
+  ],
+  "templates": {
+   "eve": [
+    {
+     "name": "evening",
+     "steps": [
+      {
+       "label": "First",
+       "types": [
+        "activity",
+        "event"
+       ],
+       "slot": "eve",
+       "time": "18:00",
+       "anchor": true
+      },
+      {
+       "label": "Dinner",
+       "types": [
+        "dinner"
+       ],
+       "near": 0,
+       "time": "19:45",
+       "meal": true,
+       "maxMin": 25
+      },
+      {
+       "label": "Nightcap",
+       "types": [
+        "drinks"
+       ],
+       "near": 1,
+       "time": "22:00",
+       "optional": true,
+       "maxMin": 25
+      }
+     ]
+    },
+    {
+     "name": "drinks-dinner",
+     "steps": [
+      {
+       "label": "Drinks",
+       "types": [
+        "drinks"
+       ],
+       "time": "19:00"
+      },
+      {
+       "label": "Dinner",
+       "types": [
+        "dinner"
+       ],
+       "near": 0,
+       "time": "20:15",
+       "anchor": true,
+       "meal": true,
+       "maxMin": 25
+      }
+     ]
+    },
+    {
+     "name": "dinner-late",
+     "steps": [
+      {
+       "label": "Dinner",
+       "types": [
+        "dinner"
+       ],
+       "time": "19:30",
+       "anchor": true,
+       "meal": true
+      },
+      {
+       "label": "After",
+       "types": [
+        "drinks",
+        "activity",
+        "event"
+       ],
+       "slot": "eve",
+       "near": 0,
+       "time": "21:30",
+       "maxMin": 25
+      }
+     ]
+    }
+   ],
+   "day": [
+    {
+     "name": "do-then-lunch",
+     "steps": [
+      {
+       "label": "Morning",
+       "types": [
+        "activity",
+        "event"
+       ],
+       "slot": "day",
+       "time": "11:00",
+       "anchor": true
+      },
+      {
+       "label": "Lunch",
+       "types": [
+        "lunch",
+        "dinner"
+       ],
+       "slot": "day",
+       "near": 0,
+       "time": "13:00",
+       "meal": true,
+       "maxMin": 25
+      },
+      {
+       "label": "Coffee",
+       "types": [
+        "coffee"
+       ],
+       "near": 1,
+       "time": "15:30",
+       "optional": true,
+       "maxMin": 25
+      }
+     ]
+    },
+    {
+     "name": "lunch-then-do",
+     "steps": [
+      {
+       "label": "Lunch",
+       "types": [
+        "lunch",
+        "coffee"
+       ],
+       "slot": "day",
+       "time": "12:30",
+       "anchor": true,
+       "meal": true
+      },
+      {
+       "label": "Afternoon",
+       "types": [
+        "activity",
+        "event"
+       ],
+       "slot": "day",
+       "near": 0,
+       "time": "14:30",
+       "maxMin": 25
+      }
+     ]
+    }
+   ],
+   "full": [
+    {
+     "name": "whole-day",
+     "steps": [
+      {
+       "label": "Morning",
+       "types": [
+        "activity",
+        "event"
+       ],
+       "slot": "day",
+       "time": "11:00",
+       "anchor": true
+      },
+      {
+       "label": "Lunch",
+       "types": [
+        "lunch",
+        "coffee"
+       ],
+       "slot": "day",
+       "near": 0,
+       "time": "13:00",
+       "meal": true,
+       "maxMin": 25
+      },
+      {
+       "label": "Dinner",
+       "types": [
+        "dinner"
+       ],
+       "near": 1,
+       "time": "19:30",
+       "meal": true,
+       "maxMin": 35
+      },
+      {
+       "label": "Nightcap",
+       "types": [
+        "drinks"
+       ],
+       "near": 2,
+       "time": "21:45",
+       "optional": true,
+       "maxMin": 25
+      }
+     ]
+    }
+   ],
+   "in": [
+    {
+     "name": "cook-watch",
+     "steps": [
+      {
+       "label": "Cook",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "cook"
+       ],
+       "time": "19:00",
+       "anchor": true,
+       "home": true
+      },
+      {
+       "label": "Then",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "watch",
+        "play"
+       ],
+       "time": "21:00",
+       "home": true
+      }
+     ]
+    },
+    {
+     "name": "make-eat",
+     "steps": [
+      {
+       "label": "Make",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "make"
+       ],
+       "time": "18:30",
+       "anchor": true,
+       "home": true
+      },
+      {
+       "label": "Dinner",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "cook",
+        "treat"
+       ],
+       "time": "20:30",
+       "home": true
+      }
+     ]
+    },
+    {
+     "name": "bake-watch",
+     "steps": [
+      {
+       "label": "Bake",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "sweet"
+       ],
+       "time": "19:00",
+       "anchor": true,
+       "home": true
+      },
+      {
+       "label": "Then",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "watch"
+       ],
+       "time": "20:30",
+       "home": true
+      }
+     ]
+    },
+    {
+     "name": "treat-play",
+     "steps": [
+      {
+       "label": "Treat",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "treat"
+       ],
+       "time": "19:30",
+       "anchor": true,
+       "home": true
+      },
+      {
+       "label": "Then",
+       "types": [
+        "nightin"
+       ],
+       "kinds": [
+        "play",
+        "watch"
+       ],
+       "time": "21:00",
+       "home": true
+      }
+     ]
+    }
+   ]
+  },
+  "travel": {
+   "default": "cycle",
+   "maxMin": 25,
+   "detour": 1.3,
+   "modes": [
+    {
+     "id": "cycle",
+     "label": "Cycle",
+     "minPerKm": 4,
+     "fixed": 3,
+     "gmaps": "bicycling"
+    },
+    {
+     "id": "tube",
+     "label": "Tube",
+     "minPerKm": 2.2,
+     "fixed": 12,
+     "gmaps": "transit"
+    },
+    {
+     "id": "walk",
+     "label": "Walk",
+     "minPerKm": 12,
+     "fixed": 0,
+     "gmaps": "walking"
+    },
+    {
+     "id": "drive",
+     "label": "Drive",
+     "minPerKm": 1.5,
+     "fixed": 8,
+     "gmaps": "driving"
+    }
+   ]
+  },
+  "homeNote": "Where and getting around don't matter for a night in."
+ },
+ "kinds": {
+  "cook": "Cook together",
+  "sweet": "Bake & dessert",
+  "watch": "Film night",
+  "play": "Games",
+  "make": "Make something",
+  "treat": "A little treat"
+ }
+}
