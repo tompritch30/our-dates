@@ -13,27 +13,33 @@
  "regions": [
   {
    "id": "C",
-   "label": "Central"
+   "label": "Central",
+   "scope": "london"
   },
   {
    "id": "N",
-   "label": "North"
+   "label": "North",
+   "scope": "london"
   },
   {
    "id": "E",
-   "label": "East"
+   "label": "East",
+   "scope": "london"
   },
   {
    "id": "S",
-   "label": "South"
+   "label": "South",
+   "scope": "london"
   },
   {
    "id": "W",
-   "label": "West"
+   "label": "West",
+   "scope": "london"
   },
   {
    "id": "SY",
-   "label": "Surrey (drive)"
+   "label": "Surrey",
+   "scope": "surrey"
   }
  ],
  "types": [
@@ -118,6 +124,16 @@
    "rule": {
     "tags": [
      "insider"
+    ]
+   }
+  },
+  {
+   "id": "iconic",
+   "label": "Cheap & brilliant",
+   "rule": {
+    "tags": [
+     "iconic",
+     "cheap"
     ]
    }
   },
@@ -225,6 +241,14 @@
     "source": "types"
    },
    {
+    "id": "on",
+    "label": "When",
+    "source": "on",
+    "when": {
+     "type": "event"
+    }
+   },
+   {
     "id": "kind",
     "label": "Night in",
     "source": "kinds",
@@ -282,8 +306,13 @@
     ]
    },
    {
-    "id": "where",
+    "id": "scope",
     "label": "Where",
+    "options": "scopes"
+   },
+   {
+    "id": "where",
+    "label": "Which part",
     "options": "regions",
     "any": "Anywhere"
    },
@@ -651,28 +680,32 @@
      "label": "Cycle",
      "minPerKm": 4,
      "fixed": 3,
-     "gmaps": "bicycling"
+     "gmaps": "bicycling",
+     "scope": "london"
     },
     {
      "id": "tube",
      "label": "Tube",
      "minPerKm": 2.2,
      "fixed": 12,
-     "gmaps": "transit"
+     "gmaps": "transit",
+     "scope": "london"
     },
     {
      "id": "walk",
      "label": "Walk",
      "minPerKm": 12,
      "fixed": 0,
-     "gmaps": "walking"
+     "gmaps": "walking",
+     "scope": "london"
     },
     {
      "id": "drive",
      "label": "Drive",
      "minPerKm": 1.5,
      "fixed": 8,
-     "gmaps": "driving"
+     "gmaps": "driving",
+     "scope": "surrey"
     }
    ]
   },
@@ -685,5 +718,37 @@
   "play": "Games",
   "make": "Make something",
   "treat": "A little treat"
- }
+ },
+ "scopes": [
+  {
+   "id": "london",
+   "label": "London"
+  },
+  {
+   "id": "surrey",
+   "label": "Surrey (we drive)"
+  }
+ ],
+ "on": [
+  {
+   "id": "week",
+   "label": "Next 7 days",
+   "days": 7
+  },
+  {
+   "id": "month",
+   "label": "Next 30 days",
+   "days": 30
+  },
+  {
+   "id": "xmas",
+   "label": "Christmas",
+   "from": "12-01",
+   "to": "12-31"
+  },
+  {
+   "id": "pick",
+   "label": "Pick a date"
+  }
+ ]
 }

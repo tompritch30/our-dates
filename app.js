@@ -71,16 +71,27 @@
   const mapsUrl = p => isHome(p) ? "" : "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(q(p));
   const dirUrl = (a, b, mode) => "https://www.google.com/maps/dir/?api=1&origin=" + encodeURIComponent(q(a)) + "&destination=" + encodeURIComponent(q(b)) + "&travelmode=" + (MODE[mode] || MODE[TRAVEL.default]).gmaps;
   const needsBooking = p => { const t = (p.tip || "") + " " + (p.book || "") + " " + p.note; return !/no booking|walk-in only|free entry/i.test(t) && /book|sell out|sells out|reserve|ticket|slot/i.test(t); };
-  const whenText = p => p.dates ? (p.dates.to ? "Until " + new Date(p.dates.to + "T12:00").toLocaleDateString("en-GB", { day: "numeric", month: "short" }) : "") : "";
+  const dm = (iso, wd) => new Date(iso + "T12:00").toLocaleDateString("en-GB", wd ? { weekday: "short", day: "numeric", month: "short" } : { day: "numeric", month: "short" });
+  const whenText = p => { const d = p.dates || {}, f = d.from, t = d.to;
+    if (f && t && f === t) return dm(f, true);
+    if (f && f > today) return t ? dm(f) + " – " + dm(t) : "From " + dm(f);
+    return t ? "Until " + dm(t) : ""; };
 
   /* ---------- planner ---------- */
-  const ask = Object.assign({ when: "eve", where: "any", travel: TRAVEL.default, mood: "any", spend: "treat" }, store.get("ask", {}));
+  const ask = Object.assign({ when: "eve", scope: "london", where: "any", travel: TRAVEL.default, mood: "any", spend: "treat" }, store.get("ask", {}));
+  const SCOPE = Object.fromEntries(C.regions.map(r => [r.id, r.scope || "london"]));
+  if (SCOPE[ask.where] === "surrey") { ask.scope = "surrey"; ask.where = "any"; }               /* old saved choice */
+  if (MODE[ask.travel]?.scope === "surrey") ask.travel = TRAVEL.default;
+  const surrey = () => ask.scope === "surrey";
+  /* travel mode in use: Surrey always drives; London uses the chosen mode */
+  const mode = () => surrey() ? (TRAVEL.modes.find(m => m.scope === "surrey") || MODE[TRAVEL.default]).id : ask.travel;
   const qOf = id => C.planner.questions.find(x => x.id === id);
   function optionsFor(qn) {
     let opts = qn.options;
-    if (opts === "regions") opts = C.regions.map(r => ({ id: r.id, label: r.label }));
+    if (opts === "scopes") opts = C.scopes.map(r => ({ id: r.id, label: r.label }));
+    else if (opts === "regions") opts = C.regions.filter(r => (r.scope || "london") === "london").map(r => ({ id: r.id, label: r.label }));
     else if (opts === "moods") opts = C.moods.map(m => ({ id: m.id, label: m.label }));
-    else if (opts === "travel") opts = TRAVEL.modes.map(m => ({ id: m.id, label: m.label }));
+    else if (opts === "travel") opts = TRAVEL.modes.filter(m => (m.scope || "london") === "london").map(m => ({ id: m.id, label: m.label }));
     return qn.any ? [{ id: "any", label: qn.any }, ...opts] : opts;
   }
   const spendOpt = () => qOf("spend").options.find(o => o.id === ask.spend) || { spendMax: 4 };
@@ -96,8 +107,8 @@
     const score = (p, s) => Math.random() + (moodRule && match(p, moodRule) ? 1.4 : 0)
       + (sp.prefer && p.spend >= sp.prefer ? 0.6 : 0) + ((p.tags || []).includes("vibe") ? 0.3 : 0)
       + (s.meal && p.cuisine && usedCuisine.has(p.cuisine) ? -1.5 : 0);
-    const best = (list, s, ref) => list.map(p => [score(p, s) - (ref ? minutes(ref, p, ask.travel) / 15 : 0), p]).sort((a, b) => b[0] - a[0])[0]?.[1] || null;
-    const inArea = (p, s) => s.home || ask.where === "any" || p.region === ask.where;
+    const best = (list, s, ref) => list.map(p => [score(p, s) - (ref ? minutes(ref, p, mode()) / 15 : 0), p]).sort((a, b) => b[0] - a[0])[0]?.[1] || null;
+    const inArea = (p, s) => s.home || (SCOPE[p.region] === ask.scope && (surrey() || ask.where === "any" || p.region === ask.where));
 
     const fits = i => base(steps[i]).filter(p => inArea(p, steps[i]) && (!moodRule || match(p, moodRule)));
     let ai = steps.findIndex(s => s.anchor), anchors = fits(ai);
@@ -122,7 +133,7 @@
         if (s.near != null && chosen[s.near]) ref = chosen[s.near];
         else { const j = steps.findIndex(t => t.near === i); if (j >= 0 && chosen[j]) { ref = chosen[j]; lim = steps[j].maxMin || TRAVEL.maxMin; } }
         if (!ref) return;
-        const cands = base(s).filter(p => !taken.has(p.id) && minutes(ref, p, ask.travel) <= lim);
+        const cands = base(s).filter(p => !taken.has(p.id) && minutes(ref, p, mode()) <= lim);
         const p = best(cands, s, ref);
         chosen[i] = p && (!s.optional || Math.random() < 0.75) ? p : false;
         progress = true;
@@ -147,7 +158,7 @@
       }
     };
     run(60);
-    if (out.length < 3 && ask.where !== "any" && !home()) { const w = ask.where; ask.where = "any"; run(40, "A bit further out"); ask.where = w; }
+    if (out.length < 3 && ask.where !== "any" && !surrey() && !home()) { const w = ask.where; ask.where = "any"; run(40, "A bit further out"); ask.where = w; }
     if (out.length < 3 && ask.mood !== "any") { const m = ask.mood; ask.mood = "any"; run(40, "A different mood, as a wildcard"); ask.mood = m; }
     return out;
   }
@@ -155,10 +166,11 @@
   function planTitle(plan) {
     const a = plan.find(x => x.step.anchor)?.place || plan[0].place;
     if (home()) return `A night in: ${(KIND[a.kind] || "").toLowerCase()}`;
-    return a.region === "SY" ? `${whenLabel()} in ${a.area}` : `${whenLabel()} around ${a.area}`;
+    const area = a.area.replace(/\s*\(.*?\)/, "").split(/ \/ |, /)[0];
+    return SCOPE[a.region] === "surrey" ? `${whenLabel()} in ${area}` : `${whenLabel()} around ${area}`;
   }
   /* a plan as a portable object: what links and saves carry */
-  const planObj = (title, stops, extra = {}) => Object.assign({ t: title, m: ask.travel, w0: ask.when, s: stops }, extra);
+  const planObj = (title, stops, extra = {}) => Object.assign({ t: title, m: mode(), w0: ask.when, s: stops }, extra);
   const fromGenerated = plan => planObj(planTitle(plan), plan.map(x => [x.place.id, x.step.time]));
   const fromReady = rp => planObj(rp.title, rp.steps.map(s => [s.place || s.text, s.time, s.what || ""]), { w: rp.why, r: rp.id });
   const planLines = o => o.s.map(([id, time]) => `${time}  ${ALL[id]?.name || id}`);
@@ -245,8 +257,9 @@
     const el = $("#tab-plan"); el.innerHTML = "";
     const form = document.createElement("div"); form.className = "planner";
     C.planner.questions.forEach(qn => {
-      if (home() && (qn.id === "where" || qn.id === "travel")) return;
-      form.appendChild(chipRow(qn.label, optionsFor(qn), ask[qn.id], v => { ask[qn.id] = v; if (qn.id === "where" && v === "SY") ask.travel = "drive"; store.set("ask", ask); current = []; tried = false; renderPlanTab(); }));
+      if (home() && ["scope", "where", "travel"].includes(qn.id)) return;
+      if (surrey() && (qn.id === "where" || qn.id === "travel")) return;
+      form.appendChild(chipRow(qn.label, optionsFor(qn), ask[qn.id], v => { ask[qn.id] = v; store.set("ask", ask); current = []; tried = false; renderPlanTab(); }));
     });
     const go = document.createElement("button"); go.className = "solid big"; go.type = "button";
     go.textContent = current.length ? "Shuffle" : "Plan our date";
@@ -255,7 +268,7 @@
 
     const res = document.createElement("div"); res.id = "results";
     if (current.length) res.innerHTML = current.map((plan, i) => planCard(plan, i)).join("");
-    else if (tried) res.innerHTML = `<p class="empty">Nothing fits all of that. Try Anywhere, a different mood, or a bigger spend.</p>`;
+    else if (tried) res.innerHTML = `<p class="empty">Nothing fits all of that. Try ${surrey() ? "London" : "Anywhere"}, a different mood, or a bigger spend.</p>`;
     el.appendChild(res);
 
     const ready = document.createElement("div"); ready.className = "ready";
@@ -275,7 +288,7 @@
     const o = fromGenerated(plan), mood = ask.mood !== "any" ? MOOD[ask.mood]?.label : whenLabel();
     let html = `<article class="plan"><div class="kind">${esc(plan.flag || mood)}</div><h3>${esc(o.t)}</h3><ol>`;
     plan.forEach((x, j) => {
-      if (j) html += hopHtml(plan[j - 1].place, x.place, ask.travel);
+      if (j) html += hopHtml(plan[j - 1].place, x.place, mode());
       const p = x.place, sub = [isHome(p) ? KIND[p.kind] : TYPE[p.type]?.label, isHome(p) ? p.time : p.area, p.dress === 3 ? C.dress["3"] : "", whenText(p)].filter(Boolean).join(" · ");
       html += stopHtml(p, x.step.time, sub);
     });
@@ -332,9 +345,19 @@
     if (src === "moods") return C.moods.map(m => ({ id: m.id, label: m.label }));
     if (src === "regions") return C.regions.map(r => ({ id: r.id, label: r.label }));
     if (src === "kinds") return Object.entries(KIND).map(([id, label]) => ({ id, label }));
+    if (src === "on") return (C.on || []).map(o => ({ id: o.id, label: o.id === "pick" && filt.onDate ? fmtDay(filt.onDate) : o.label }));
     return [];
   }
-  const testF = (f, p, v) => f.source === "types" ? p.type === v : f.source === "regions" ? p.region === v : f.source === "kinds" ? p.kind === v : f.source === "moods" ? match(p, moodOf(v)) : true;
+  const addDays = (iso, n) => { const d = new Date(iso + "T12:00"); d.setDate(d.getDate() + n); return d.toISOString().slice(0, 10); };
+  const fmtDay = iso => new Date(iso + "T12:00").toLocaleDateString("en-GB", { weekday: "short", day: "numeric", month: "short" });
+  function onRange(v) {                                  /* [start, end] ISO dates for a "When" chip */
+    const o = (C.on || []).find(x => x.id === v) || {};
+    if (o.days) return [today, addDays(today, o.days)];
+    if (o.from) { const y = today.slice(0, 4), a = y + "-" + o.from, b = y + "-" + o.to; return b < today ? [(+y + 1) + "-" + o.from, (+y + 1) + "-" + o.to] : [a, b]; }
+    const d = filt.onDate || today; return [d, d];
+  }
+  const isOn = (p, v) => { if (p.type !== "event") return true; const [a, b] = onRange(v), d = p.dates || {}; return (!d.from || d.from <= b) && (!d.to || d.to >= a); };
+  const testF = (f, p, v) => f.source === "types" ? p.type === v : f.source === "regions" ? p.region === v : f.source === "kinds" ? p.kind === v : f.source === "moods" ? match(p, moodOf(v)) : f.source === "on" ? isOn(p, v) : true;
   function passes(p, skip) {
     for (const f of C.browse.filters) { if (f.id === skip) continue; const v = filt[f.id]; if (v !== "all" && !testF(f, p, v)) return false; }
     if (filt.q) { const s = (p.name + " " + p.area + " " + p.note + " " + (p.cuisine || "") + " " + (p.tags || []).join(" ")).toLowerCase(); if (!s.includes(filt.q)) return false; }
@@ -354,11 +377,20 @@
       const opts = sourceOpts(f.source).map(o => Object.assign(o, { n: pool.filter(p => testF(f, p, o.id)).length })).filter(o => o.n > 0 || filt[f.id] === o.id);
       if (!opts.length) return;
       rows.appendChild(chipRow(f.label, [{ id: "all", label: "All", n: pool.length }, ...opts], filt[f.id], v => { filt[f.id] = v; renderBrowse(); }));
+      if (f.source === "on" && filt[f.id] === "pick") {         /* date picker for "Pick a date" */
+        const inp = document.createElement("input"); inp.type = "date"; inp.min = today; inp.value = filt.onDate || today; inp.className = "datepick"; inp.setAttribute("aria-label", "Pick a date");
+        inp.onchange = () => { filt.onDate = inp.value || today; renderBrowse(); };
+        rows.appendChild(inp);
+      }
     });
     renderList();
   }
   function renderList() {
     const r = P.filter(p => passes(p));
+    if (filt.type === "event") {                              /* soonest first, ongoing shows sorted by end */
+      const k = p => { const d = p.dates || {}; return (d.from && d.from > today ? d.from : today) + (d.to || "9999"); };
+      r.sort((a, b) => k(a) < k(b) ? -1 : k(a) > k(b) ? 1 : 0);
+    }
     $("#count").textContent = r.length + (r.length === 1 ? " idea" : " ideas");
     $("#list").innerHTML = r.length ? r.map(p => {
       const on = isPicked({ k: "place", id: p.id });

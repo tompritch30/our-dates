@@ -1777,7 +1777,11 @@
   "added": "2026-10-26",
   "lat": 51.51559,
   "lng": -0.06119,
-  "maps_query": "Dennis Severs' House at Christmas Spitalfields London"
+  "maps_query": "Dennis Severs' House at Christmas Spitalfields London",
+  "dates": {
+   "from": "2026-11-20",
+   "to": "2027-01-10"
+  }
  },
  {
   "id": "sir-john-soane-s-museum-twilight-tours",
@@ -1802,7 +1806,11 @@
   "added": "2026-10-26",
   "lat": 51.51509,
   "lng": -0.11636,
-  "maps_query": "Sir John Soane's Museum twilight tours Holborn London"
+  "maps_query": "Sir John Soane's Museum twilight tours Holborn London",
+  "dates": {
+   "from": "2026-11-20",
+   "to": "2026-12-05"
+  }
  },
  {
   "id": "a-christmas-carol-at-dickens-s-house",
@@ -1826,7 +1834,11 @@
   "added": "2026-10-26",
   "lat": 51.523,
   "lng": -0.12262,
-  "maps_query": "A Christmas Carol at Dickens's house Bloomsbury London"
+  "maps_query": "A Christmas Carol at Dickens's house Bloomsbury London",
+  "dates": {
+   "from": "2026-12-01",
+   "to": "2026-12-23"
+  }
  },
  {
   "id": "christmas-lates-at-dr-johnson-s-house",
@@ -1850,7 +1862,11 @@
   "added": "2026-10-26",
   "lat": 51.51338,
   "lng": -0.10435,
-  "maps_query": "Christmas Lates at Dr Johnson's House Fleet Street London"
+  "maps_query": "Christmas Lates at Dr Johnson's House Fleet Street London",
+  "dates": {
+   "from": "2026-11-19",
+   "to": "2026-12-15"
+  }
  },
  {
   "id": "christmas-music-at-leighton-house",
@@ -1875,7 +1891,11 @@
   "added": "2026-10-26",
   "lat": 51.49502,
   "lng": -0.2117,
-  "maps_query": "Christmas Music at Leighton House Holland Park London"
+  "maps_query": "Christmas Music at Leighton House Holland Park London",
+  "dates": {
+   "from": "2026-12-04",
+   "to": "2026-12-04"
+  }
  },
  {
   "id": "yalda-longest-night-at-leighton-house",
@@ -1900,7 +1920,11 @@
   "added": "2026-10-26",
   "lat": 51.4951,
   "lng": -0.21254,
-  "maps_query": "Yalda: Longest Night at Leighton House Holland Park London"
+  "maps_query": "Yalda: Longest Night at Leighton House Holland Park London",
+  "dates": {
+   "from": "2026-12-19",
+   "to": "2026-12-19"
+  }
  },
  {
   "id": "painted-hall-5-sunday",
@@ -1925,7 +1949,11 @@
   "added": "2026-10-26",
   "lat": 51.48176,
   "lng": 0.00246,
-  "maps_query": "Painted Hall £5 Sunday Greenwich London"
+  "maps_query": "Painted Hall £5 Sunday Greenwich London",
+  "dates": {
+   "from": "2026-11-01",
+   "to": "2026-12-06"
+  }
  },
  {
   "id": "wigmore-hall-5-under-35-tickets",
@@ -2022,7 +2050,11 @@
   "added": "2026-10-26",
   "lat": 51.56306,
   "lng": -0.0733,
-  "maps_query": "Faust with live score Stoke Newington London"
+  "maps_query": "Faust with live score Stoke Newington London",
+  "dates": {
+   "from": "2026-11-22",
+   "to": "2026-11-22"
+  }
  },
  {
   "id": "the-castle-cinema",
@@ -2168,7 +2200,10 @@
   "added": "2026-10-26",
   "lat": 51.43735,
   "lng": -0.08956,
-  "maps_query": "Hokusai + Japanese supper club Dulwich London"
+  "maps_query": "Hokusai + Japanese supper club Dulwich London",
+  "dates": {
+   "to": "2026-11-25"
+  }
  },
  {
   "id": "cockpit-winter-open-studios",
@@ -2193,7 +2228,11 @@
   "added": "2026-10-26",
   "lat": 51.47882,
   "lng": -0.02982,
-  "maps_query": "Cockpit Winter Open Studios Deptford London"
+  "maps_query": "Cockpit Winter Open Studios Deptford London",
+  "dates": {
+   "from": "2026-12-04",
+   "to": "2026-12-06"
+  }
  },
  {
   "id": "van-gogh-house-tour",
@@ -2266,7 +2305,11 @@
   "added": "2026-10-26",
   "lat": 51.54421,
   "lng": -0.05973,
-  "maps_query": "St Augustine's Tower climb Hackney Central London"
+  "maps_query": "St Augustine's Tower climb Hackney Central London",
+  "dates": {
+   "from": "2026-11-29",
+   "to": "2026-11-29"
+  }
  },
  {
   "id": "beaujolais-nouveau-night-the-grove",
@@ -2290,7 +2333,11 @@
   "added": "2026-10-26",
   "lat": 51.44764,
   "lng": -0.14879,
-  "maps_query": "Beaujolais Nouveau night Balham London"
+  "maps_query": "Beaujolais Nouveau night Balham London",
+  "dates": {
+   "from": "2026-11-19",
+   "to": "2026-11-19"
+  }
  },
  {
   "id": "renoir-and-love-national-gallery",
@@ -2314,7 +2361,10 @@
   "added": "2026-10-26",
   "lat": 51.50835,
   "lng": -0.12696,
-  "maps_query": "Renoir and Love Trafalgar Square London"
+  "maps_query": "Renoir and Love Trafalgar Square London",
+  "dates": {
+   "to": "2027-01-31"
+  }
  },
  {
   "id": "van-eyck-the-portraits-national-gallery",
@@ -2338,7 +2388,11 @@
   "added": "2026-10-26",
   "lat": 51.50823,
   "lng": -0.12712,
-  "maps_query": "Van Eyck: The Portraits Trafalgar Square London"
+  "maps_query": "Van Eyck: The Portraits Trafalgar Square London",
+  "dates": {
+   "from": "2026-11-21",
+   "to": "2027-04-11"
+  }
  },
  {
   "id": "painting-the-french-riviera-royal-academy",
@@ -2362,7 +2416,11 @@
   "added": "2026-10-26",
   "lat": 51.50797,
   "lng": -0.14108,
-  "maps_query": "Painting the French Riviera Piccadilly London"
+  "maps_query": "Painting the French Riviera Piccadilly London",
+  "dates": {
+   "from": "2026-10-02",
+   "to": "2027-01-31"
+  }
  },
  {
   "id": "light-and-magic-tate-modern",
@@ -2386,7 +2444,11 @@
   "added": "2026-10-26",
   "lat": 51.50008,
   "lng": -0.08963,
-  "maps_query": "Light and Magic Bankside London"
+  "maps_query": "Light and Magic Bankside London",
+  "dates": {
+   "from": "2026-10-14",
+   "to": "2027-02-21"
+  }
  },
  {
   "id": "the-90s-art-and-fashion-tate-britain",
@@ -2410,7 +2472,11 @@
   "added": "2026-10-26",
   "lat": 51.49624,
   "lng": -0.13074,
-  "maps_query": "The 90s: Art and Fashion Millbank London"
+  "maps_query": "The 90s: Art and Fashion Millbank London",
+  "dates": {
+   "from": "2026-10-08",
+   "to": "2027-02-14"
+  }
  },
  {
   "id": "tim-walker-s-fairyland-national-portrait-gallery",
@@ -2434,7 +2500,11 @@
   "added": "2026-10-26",
   "lat": 51.51131,
   "lng": -0.12666,
-  "maps_query": "Tim Walker's Fairyland Covent Garden London"
+  "maps_query": "Tim Walker's Fairyland Covent Garden London",
+  "dates": {
+   "from": "2026-10-09",
+   "to": "2027-02-07"
+  }
  },
  {
   "id": "nan-goldin-hayward-gallery",
@@ -2458,7 +2528,10 @@
   "added": "2026-10-26",
   "lat": 51.50043,
   "lng": -0.08751,
-  "maps_query": "Nan Goldin Southbank London"
+  "maps_query": "Nan Goldin Southbank London",
+  "dates": {
+   "from": "2026-11-24"
+  }
  },
  {
   "id": "robert-ryman-barbican",
@@ -2482,7 +2555,11 @@
   "added": "2026-10-26",
   "lat": 51.52132,
   "lng": -0.09594,
-  "maps_query": "Robert Ryman Barbican London"
+  "maps_query": "Robert Ryman Barbican London",
+  "dates": {
+   "from": "2026-10-08",
+   "to": "2027-02-28"
+  }
  },
  {
   "id": "salman-toor-courtauld",
@@ -2506,7 +2583,11 @@
   "added": "2026-10-26",
   "lat": 51.50984,
   "lng": -0.11719,
-  "maps_query": "Salman Toor Strand London"
+  "maps_query": "Salman Toor Strand London",
+  "dates": {
+   "from": "2026-10-02",
+   "to": "2027-01-10"
+  }
  },
  {
   "id": "amar-kanwar-serpentine-north",
@@ -2530,7 +2611,10 @@
   "added": "2026-10-26",
   "lat": 51.51424,
   "lng": -0.17605,
-  "maps_query": "Amar Kanwar Kensington Gardens London"
+  "maps_query": "Amar Kanwar Kensington Gardens London",
+  "dates": {
+   "to": "2027-01-31"
+  }
  },
  {
   "id": "es-devlin-other-worlds-design-museum",
@@ -2554,7 +2638,11 @@
   "added": "2026-10-26",
   "lat": 51.50239,
   "lng": -0.1939,
-  "maps_query": "Es Devlin: Other Worlds Kensington London"
+  "maps_query": "Es Devlin: Other Worlds Kensington London",
+  "dates": {
+   "from": "2026-10-02",
+   "to": "2027-04-04"
+  }
  },
  {
   "id": "v-a-friday-late",
@@ -2578,7 +2666,11 @@
   "added": "2026-10-26",
   "lat": 51.49565,
   "lng": -0.17147,
-  "maps_query": "V&A Friday Late South Kensington London"
+  "maps_query": "V&A Friday Late South Kensington London",
+  "dates": {
+   "from": "2026-11-27",
+   "to": "2026-11-27"
+  }
  },
  {
   "id": "london-museum-opening-smithfield",
@@ -2600,7 +2692,10 @@
   "added": "2026-10-26",
   "lat": 51.52131,
   "lng": -0.10531,
-  "maps_query": "London Museum opening Smithfield London"
+  "maps_query": "London Museum opening Smithfield London",
+  "dates": {
+   "from": "2026-11-28"
+  }
  },
  {
   "id": "melody-gardot-royal-albert-hall",
@@ -2622,7 +2717,11 @@
   "added": "2026-10-26",
   "lat": 51.49428,
   "lng": -0.17704,
-  "maps_query": "Melody Gardot South Kensington London"
+  "maps_query": "Melody Gardot South Kensington London",
+  "dates": {
+   "from": "2026-11-16",
+   "to": "2026-11-16"
+  }
  },
  {
   "id": "murakami-s-jazz-at-peter-cat-barbican",
@@ -2644,7 +2743,11 @@
   "added": "2026-10-26",
   "lat": 51.52209,
   "lng": -0.09364,
-  "maps_query": "Murakami's Jazz at Peter Cat Barbican London"
+  "maps_query": "Murakami's Jazz at Peter Cat Barbican London",
+  "dates": {
+   "from": "2026-11-21",
+   "to": "2026-11-21"
+  }
  },
  {
   "id": "sam-gendel-sam-wilkes-union-chapel",
@@ -2666,7 +2769,11 @@
   "added": "2026-10-26",
   "lat": 51.5354,
   "lng": -0.09423,
-  "maps_query": "Sam Gendel & Sam Wilkes Islington London"
+  "maps_query": "Sam Gendel & Sam Wilkes Islington London",
+  "dates": {
+   "from": "2026-11-17",
+   "to": "2026-11-17"
+  }
  },
  {
   "id": "rake-at-the-compton-arms",
@@ -2711,7 +2818,11 @@
   "added": "2026-10-26",
   "lat": 51.5107,
   "lng": -0.11887,
-  "maps_query": "Skate at Somerset House Strand London"
+  "maps_query": "Skate at Somerset House Strand London",
+  "dates": {
+   "from": "2026-11-11",
+   "to": "2027-01-10"
+  }
  },
  {
   "id": "christmas-at-kew-adults-only-nights",
@@ -2735,7 +2846,11 @@
   "added": "2026-10-26",
   "lat": 51.46551,
   "lng": -0.29722,
-  "maps_query": "Christmas at Kew Kew London"
+  "maps_query": "Christmas at Kew Kew London",
+  "dates": {
+   "from": "2026-11-13",
+   "to": "2027-01-03"
+  }
  },
  {
   "id": "independent-ceramics-market",
@@ -2759,7 +2874,11 @@
   "added": "2026-10-26",
   "lat": 51.47424,
   "lng": -0.06363,
-  "maps_query": "Independent Ceramics Market Peckham London"
+  "maps_query": "Independent Ceramics Market Peckham London",
+  "dates": {
+   "from": "2026-12-12",
+   "to": "2026-12-13"
+  }
  },
  {
   "id": "southbank-winter-light",
@@ -2781,7 +2900,11 @@
   "added": "2026-10-26",
   "lat": 51.49851,
   "lng": -0.08645,
-  "maps_query": "Southbank Winter Light Southbank London"
+  "maps_query": "Southbank Winter Light Southbank London",
+  "dates": {
+   "from": "2026-11-01",
+   "to": "2027-01-18"
+  }
  },
  {
   "id": "who-s-afraid-of-virginia-woolf-sohoplace",
@@ -2803,7 +2926,10 @@
   "added": "2026-10-26",
   "lat": 51.51311,
   "lng": -0.12806,
-  "maps_query": "Who's Afraid of Virginia Woolf? Soho London"
+  "maps_query": "Who's Afraid of Virginia Woolf? Soho London",
+  "dates": {
+   "to": "2026-12-19"
+  }
  },
  {
   "id": "paint-your-partner-challenge-art-play",
@@ -4607,7 +4733,11 @@
    "url": "https://londondrum.com/events/?m=november"
   },
   "status": "active",
-  "added": "2026-10-26"
+  "added": "2026-10-26",
+  "dates": {
+   "from": "2026-11-07",
+   "to": "2026-11-07"
+  }
  },
  {
   "id": "taylor-wessing-portrait-prize",
@@ -4677,7 +4807,11 @@
   "added": "2026-10-26",
   "lat": 51.51965,
   "lng": -0.12063,
-  "maps_query": "Kitchen Theory Holborn London"
+  "maps_query": "Kitchen Theory Holborn London",
+  "dates": {
+   "from": "2026-12-06",
+   "to": "2026-12-20"
+  }
  },
  {
   "id": "fengzhen-supper-club",
@@ -4702,7 +4836,11 @@
   "added": "2026-10-26",
   "lat": 51.41617,
   "lng": -0.08101,
-  "maps_query": "Fengzhen Supper Club Crystal Palace London"
+  "maps_query": "Fengzhen Supper Club Crystal Palace London",
+  "dates": {
+   "from": "2026-11-06",
+   "to": "2026-12-31"
+  }
  },
  {
   "id": "anglothai-x-david-thompson",
@@ -4724,7 +4862,11 @@
   "added": "2026-10-26",
   "lat": 51.52063,
   "lng": -0.15176,
-  "maps_query": "AngloThai x David Thompson Marylebone London"
+  "maps_query": "AngloThai x David Thompson Marylebone London",
+  "dates": {
+   "from": "2026-11-10",
+   "to": "2026-11-11"
+  }
  },
  {
   "id": "606-club",
@@ -4796,7 +4938,11 @@
    "url": "https://www.thecandlelightclub.com/"
   },
   "status": "active",
-  "added": "2026-10-26"
+  "added": "2026-10-26",
+  "dates": {
+   "from": "2026-11-21",
+   "to": "2026-12-11"
+  }
  },
  {
   "id": "british-pullman-christmas-lunch",
@@ -4820,7 +4966,11 @@
   "added": "2026-10-26",
   "lat": 51.48767,
   "lng": -0.13821,
-  "maps_query": "British Pullman Christmas lunch Victoria London"
+  "maps_query": "British Pullman Christmas lunch Victoria London",
+  "dates": {
+   "from": "2026-11-13",
+   "to": "2026-12-20"
+  }
  },
  {
   "id": "supperclub-tube",
@@ -6334,7 +6484,11 @@
   "added": "2026-10-26",
   "lat": 51.29556,
   "lng": -0.50961,
-  "maps_query": "RHS Glow at Wisley Wisley Surrey"
+  "maps_query": "RHS Glow at Wisley Wisley Surrey",
+  "dates": {
+   "from": "2026-11-20",
+   "to": "2027-01-03"
+  }
  },
  {
   "id": "twelve-days-of-christmas-at-polesden-lacey",
@@ -6360,7 +6514,11 @@
   "added": "2026-10-26",
   "lat": 51.19572,
   "lng": -0.34216,
-  "maps_query": "Twelve Days of Christmas at Polesden Lacey Great Bookham Surrey"
+  "maps_query": "Twelve Days of Christmas at Polesden Lacey Great Bookham Surrey",
+  "dates": {
+   "from": "2026-11-21",
+   "to": "2027-01-03"
+  }
  },
  {
   "id": "winter-palace-the-christmas-beast-ball-hampton-c",
@@ -6385,7 +6543,11 @@
   "added": "2026-10-26",
   "lat": 51.40008,
   "lng": -0.36499,
-  "maps_query": "Winter Palace: The Christmas Beast Ball, Hampton Court East Molesey Surrey"
+  "maps_query": "Winter Palace: The Christmas Beast Ball, Hampton Court East Molesey Surrey",
+  "dates": {
+   "from": "2026-11-28",
+   "to": "2027-01-03"
+  }
  },
  {
   "id": "hampton-court-festive-fayre",
@@ -6409,7 +6571,11 @@
   "added": "2026-10-26",
   "lat": 51.39925,
   "lng": -0.36193,
-  "maps_query": "Hampton Court Festive Fayre East Molesey Surrey"
+  "maps_query": "Hampton Court Festive Fayre East Molesey Surrey",
+  "dates": {
+   "from": "2026-12-04",
+   "to": "2026-12-13"
+  }
  },
  {
   "id": "christmas-at-hatchlands-park",
@@ -6434,7 +6600,11 @@
   "added": "2026-10-26",
   "lat": 51.24212,
   "lng": -0.53938,
-  "maps_query": "Christmas at Hatchlands Park East Clandon Surrey"
+  "maps_query": "Christmas at Hatchlands Park East Clandon Surrey",
+  "dates": {
+   "from": "2026-11-28",
+   "to": "2027-01-03"
+  }
  },
  {
   "id": "guildford-cathedral-christmas-fair",
@@ -6458,7 +6628,11 @@
   "added": "2026-10-26",
   "lat": 51.24417,
   "lng": -0.5918,
-  "maps_query": "Guildford Cathedral Christmas Fair Guildford Surrey"
+  "maps_query": "Guildford Cathedral Christmas Fair Guildford Surrey",
+  "dates": {
+   "from": "2026-11-20",
+   "to": "2026-11-21"
+  }
  },
  {
   "id": "christmas-at-watts-gallery-and-wreath-making",
@@ -7876,5 +8050,1678 @@
   "lat": 51.5112,
   "lng": -0.1302,
   "maps_query": "Prince Charles Cinema London"
+ },
+ {
+  "id": "pockets",
+  "name": "Pockets",
+  "type": "lunch",
+  "area": "London Fields",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic",
+   "insider"
+  ],
+  "note": "Steamed pitta packed with herby falafel, zhug, amba and a battered potato chip. Order the falafel pocket.",
+  "source": {
+   "name": "Time Out London",
+   "url": "https://www.timeout.com/london/restaurants/wheres-good-in-london-for-falafel"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Middle Eastern",
+  "maps_query": "Pockets London Fields London E8",
+  "tip": "Takeaway only, 11am–4pm; queues from opening",
+  "lat": 51.54061,
+  "lng": -0.06734
+ },
+ {
+  "id": "the-dusty-knuckle",
+  "name": "The Dusty Knuckle",
+  "type": "coffee",
+  "area": "Dalston",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Social-enterprise bakery known for its potato sourdough. Get the roasted beetroot and carrot sandwich.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/guides/best-sandwich-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "The Dusty Knuckle Dalston London E8",
+  "tip": "Abbot St car park; outdoor seating",
+  "lat": 51.54323,
+  "lng": -0.06828
+ },
+ {
+  "id": "b-nh",
+  "name": "Bánh",
+  "type": "lunch",
+  "area": "Dalston",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Vietnamese bakery baking its own light baguettes for made-to-order bánh mì. Order the classic.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/guides/best-sandwich-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Vietnamese",
+  "maps_query": "Bánh Dalston London E8",
+  "lat": 51.54231,
+  "lng": -0.06476
+ },
+ {
+  "id": "ararat-bread",
+  "name": "Ararat Bread",
+  "type": "lunch",
+  "area": "Dalston (Ridley Road Market)",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic",
+   "insider"
+  ],
+  "note": "Tiny market bakery slapping out hot naans. Get the cheese and egg naan.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/The-best-restaurants-in-London/best-restaurants-bars-cafes-dalston-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Ararat Bread Dalston (Ridley Road Market) London E8",
+  "tip": "Market stall on Ridley Road",
+  "lat": 51.53848,
+  "lng": -0.06306
+ },
+ {
+  "id": "ewarts-jerk",
+  "name": "Ewarts Jerk",
+  "type": "lunch",
+  "area": "Dalston (Gillett Square)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Drum-barbecued jerk out of a Gillett Square unit. Jerk chicken, plus an ackee and saltfish patty.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/The-best-restaurants-in-London/best-restaurants-bars-cafes-dalston-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Ewarts Jerk Dalston (Gillett Square) London N16",
+  "tip": "Takeaway",
+  "lat": 51.5592,
+  "lng": -0.07605
+ },
+ {
+  "id": "andu-caf",
+  "name": "Andu Café",
+  "type": "lunch",
+  "area": "Dalston",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Vegan Ethiopian café with homemade injera. Order the six-dish sampler platter.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/the-best-restaurants-in-dalston"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Andu Café Dalston London E8",
+  "tip": "BYOB",
+  "lat": 51.53858,
+  "lng": -0.06806
+ },
+ {
+  "id": "the-midyeci",
+  "name": "The Midyeci",
+  "type": "lunch",
+  "area": "Dalston",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Turkish stuffed-mussel shop. Order midye dolma and the fish kokoreç sandwich.",
+  "source": {
+   "name": "Vittles",
+   "url": "https://www.vittlesmagazine.com/p/the-50-best-sandwiches-in-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "The Midyeci Dalston London E8",
+  "tip": "Tue–Sun from noon; closed Mondays",
+  "lat": 51.54142,
+  "lng": -0.05923
+ },
+ {
+  "id": "peppers-spice",
+  "name": "Peppers & Spice",
+  "type": "lunch",
+  "area": "Dalston",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Caribbean takeaway institution. Get oxtail or jerk, with macaroni pie.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/the-best-restaurants-in-dalston"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Peppers & Spice Dalston London N1",
+  "tip": "Expect a queue",
+  "lat": 51.53416,
+  "lng": -0.09984
+ },
+ {
+  "id": "logma",
+  "name": "Logma",
+  "type": "lunch",
+  "area": "Hackney (Goldsmith's Row)",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "insider",
+   "new"
+  ],
+  "note": "Iranian-Iraqi lunch café with giant sourdough pittas. Order the lamb kofte pitta.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/guides/best-sandwich-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Middle Eastern",
+  "maps_query": "Logma Hackney (Goldsmith's Row) London E2",
+  "tip": "Pittas sell out; go early",
+  "lat": 51.53041,
+  "lng": -0.05543
+ },
+ {
+  "id": "e5-bakehouse",
+  "name": "E5 Bakehouse",
+  "type": "coffee",
+  "area": "London Fields",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Railway-arch sourdough bakery and café. Take a warm loaf, or the mushroom pizzetta at lunch.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/e5-bakehouse"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "E5 Bakehouse London Fields London E8",
+  "tip": "Courtyard seating out back",
+  "lat": 51.54264,
+  "lng": -0.06439
+ },
+ {
+  "id": "violet",
+  "name": "Violet",
+  "type": "coffee",
+  "area": "Hackney (Wilton Way)",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Claire Ptak's cult cake shop. Get the egg yolk choc chip cookie or kimchi-blue cheese toastie.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/violet-hackney"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Violet Hackney (Wilton Way) London E8",
+  "lat": 51.54583,
+  "lng": -0.06859
+ },
+ {
+  "id": "koya-ko",
+  "name": "Koya Ko",
+  "type": "lunch",
+  "area": "Broadway Market",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Small udon counter from Koya. Order the Japanese breakfast udon, or cold sesame udon in summer.",
+  "source": {
+   "name": "The Nudge",
+   "url": "https://thenudge.com/?p=114156"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Koya Ko Broadway Market London E8",
+  "tip": "Walk-ins only; open daily",
+  "lat": 51.54489,
+  "lng": -0.06567
+ },
+ {
+  "id": "b-nh-m-h-i-an",
+  "name": "Bánh Mì Hội-An",
+  "type": "lunch",
+  "area": "Hackney (Graham Road)",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Tiny, mostly-takeaway Vietnamese spot doing big, overstuffed bánh mì. Order the house bánh mì.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/the-best-restaurants-in-hackney"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Vietnamese",
+  "maps_query": "Bánh Mì Hội-An Hackney (Graham Road) London E8",
+  "tip": "Mostly takeaway",
+  "lat": 51.53917,
+  "lng": -0.06774
+ },
+ {
+  "id": "jupiter-burger",
+  "name": "Jupiter Burger",
+  "type": "lunch",
+  "area": "London Fields (Netil Market)",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Diner-style market stall from the Dom's Subs team. Order the cheeseburger.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/the-best-restaurants-in-hackney"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Jupiter Burger London Fields (Netil Market) London E8",
+  "tip": "Netil Market stall",
+  "lat": 51.54049,
+  "lng": -0.05936
+ },
+ {
+  "id": "towpath",
+  "name": "Towpath",
+  "type": "coffee",
+  "area": "De Beauvoir / Haggerston",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic",
+   "insider"
+  ],
+  "note": "Mostly outdoor café on the Regent's Canal towpath. Go for the sausage or a simple brunch.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/the-best-restaurants-in-hackney"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Towpath De Beauvoir / Haggerston London N1",
+  "tip": "Outdoors; check winter opening first",
+  "lat": 51.53462,
+  "lng": -0.09554
+ },
+ {
+  "id": "people-s-choice",
+  "name": "People's Choice",
+  "type": "lunch",
+  "area": "Clapton (Chatsworth Road)",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Oil-drum jerk takeaway. Get jerk chicken and a saltfish patty, then eat in Millfields Park.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-restaurants-in-clapton"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "People's Choice Clapton (Chatsworth Road) London E5",
+  "tip": "Takeaway only; near Homerton station",
+  "lat": 51.56004,
+  "lng": -0.05386
+ },
+ {
+  "id": "bake-street",
+  "name": "Bake Street",
+  "type": "coffee",
+  "area": "Rectory Road / Clapton",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Bakery-café doing fried chicken buns and weekend specials. Order the Nashville hot chicken bun.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/bake-street"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Bake Street Rectory Road / Clapton London N16",
+  "tip": "Closed Mondays; few seats",
+  "lat": 51.56328,
+  "lng": -0.0805
+ },
+ {
+  "id": "spence-bakery",
+  "name": "Spence Bakery",
+  "type": "coffee",
+  "area": "Stoke Newington",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Church Street sourdough bakery with sandwiches. Get a pain au chocolat and coffee.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/spence-bakery"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Spence Bakery Stoke Newington London N16",
+  "tip": "Weekend morning queues",
+  "lat": 51.55938,
+  "lng": -0.07878
+ },
+ {
+  "id": "roti-stop",
+  "name": "Roti Stop",
+  "type": "lunch",
+  "area": "Stamford Hill / Stoke Newington",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Tiny Caribbean corner takeaway. Order curry goat in flaky roti with channa, and peanut punch.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/roti-stop"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Roti Stop Stamford Hill / Stoke Newington London N16",
+  "tip": "Takeaway",
+  "lat": 51.56434,
+  "lng": -0.07612
+ },
+ {
+  "id": "jolene",
+  "name": "Jolene",
+  "type": "coffee",
+  "area": "Newington Green",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Cult bakery-restaurant milling its own grain. Get a croissant or palmier from the counter.",
+  "source": {
+   "name": "The Nudge",
+   "url": "https://thenudge.com/jolene/"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Jolene Newington Green London N16",
+  "tip": "Bakery open daily from 8am",
+  "lat": 51.56141,
+  "lng": -0.07422
+ },
+ {
+  "id": "raab-s-the-bakers",
+  "name": "Raab's The Bakers",
+  "type": "coffee",
+  "area": "Islington (Essex Road)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic",
+   "insider"
+  ],
+  "note": "Old-school family bakery with filled baps. Get the birthday cake slice, under £2.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/raabs-the-bakers"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Raab's The Bakers Islington (Essex Road) London N1",
+  "lat": 51.5368,
+  "lng": -0.09892
+ },
+ {
+  "id": "zeit-f-r-brot",
+  "name": "Zeit für Brot",
+  "type": "coffee",
+  "area": "Angel",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "new"
+  ],
+  "note": "Berlin bakery's London outpost. Order the currywurst sausage roll and an apple-cinnamon schnecke.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/zeit-r-brot"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Zeit für Brot Angel London N1",
+  "lat": 51.53953,
+  "lng": -0.09413
+ },
+ {
+  "id": "pophams",
+  "name": "Pophams",
+  "type": "coffee",
+  "area": "Islington",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "The original branch of the inventive laminated-pastry bakery. Get a signature seasonal pastry.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/neighborhoods/islington"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Pophams Islington London N1",
+  "lat": 51.53512,
+  "lng": -0.09563
+ },
+ {
+  "id": "oiso-korean-street-food",
+  "name": "OISO Korean Street Food",
+  "type": "lunch",
+  "area": "King's Cross (Caledonian Road)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Family-run Korean café with a short menu. Order the bibimbap or bulgogi.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/The-best-restaurants-in-London/best-restaurants-kings-cross-euston-london-eating-out"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "OISO Korean Street Food King's Cross (Caledonian Road) London N1",
+  "tip": "Lunchtime only",
+  "lat": 51.53737,
+  "lng": -0.09202
+ },
+ {
+  "id": "johnny-schnitzel",
+  "name": "Johnny Schnitzel",
+  "type": "lunch",
+  "area": "King's Cross / Clerkenwell",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Schnitzel sandwich specialist. Order the schnitzel sandwich.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/guides/best-sandwich-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Johnny Schnitzel King's Cross / Clerkenwell London WC1X",
+  "lat": 51.52673,
+  "lng": -0.11832
+ },
+ {
+  "id": "max-s-sandwich-shop",
+  "name": "Max's Sandwich Shop",
+  "type": "lunch",
+  "area": "Stroud Green / Finsbury Park",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Max Halley's maximalist sandwich shop. Order Ham, Egg 'n' Chips.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/guides/best-sandwich-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Max's Sandwich Shop Stroud Green / Finsbury Park London N4",
+  "lat": 51.57436,
+  "lng": -0.10548
+ },
+ {
+  "id": "baban-s-naan",
+  "name": "Baban's Naan",
+  "type": "lunch",
+  "area": "Finsbury Park (Blackstock Road)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Hole-in-the-wall tandoor naan shop at knockdown prices. Get the cheese or za'atar naan.",
+  "source": {
+   "name": "Time Out London",
+   "url": "https://www.timeout.com/london/restaurants/babans-naan"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Baban's Naan Finsbury Park (Blackstock Road) London N4",
+  "tip": "Long queues since going viral",
+  "lat": 51.56986,
+  "lng": -0.09781
+ },
+ {
+  "id": "dilara",
+  "name": "Dilara",
+  "type": "lunch",
+  "area": "Finsbury Park (Blackstock Road)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider",
+   "shanghai"
+  ],
+  "note": "Uyghur canteen doing hand-pulled noodles and dumplings. Order the beef hand-pulled noodles.",
+  "source": {
+   "name": "Time Out London",
+   "url": "https://www.timeout.com/london/news/the-8-best-places-to-visit-on-blackstock-road-londons-coolest-street-in-2025-chosen-by-time-out-editors-111925"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Chinese",
+  "maps_query": "Dilara Finsbury Park (Blackstock Road) London N4",
+  "tip": "No alcohol",
+  "lat": 51.56774,
+  "lng": -0.10103
+ },
+ {
+  "id": "the-happening-bagel-bakery",
+  "name": "The Happening Bagel Bakery",
+  "type": "coffee",
+  "area": "Finsbury Park (Seven Sisters Road)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Old-school bagel bakery. Get a bagel, and a challah to take home.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://hot-dinners.com/Features/Hot-Dinners-recommends/best-restaurants-finsbury-park-cafes-bars-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bagels",
+  "maps_query": "The Happening Bagel Bakery Finsbury Park (Seven Sisters Road) London N4",
+  "lat": 51.56683,
+  "lng": -0.09888
+ },
+ {
+  "id": "fink-s",
+  "name": "Fink's",
+  "type": "coffee",
+  "area": "Highbury (Mountgrove Road)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Neighbourhood deli-café doing sandwiches, coffee and provisions. Order a sandwich and a flat white.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://hot-dinners.com/Features/Hot-Dinners-recommends/best-restaurants-finsbury-park-cafes-bars-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Fink's Highbury (Mountgrove Road) London N5",
+  "tip": "Currently takeaway only",
+  "lat": 51.55549,
+  "lng": -0.09641
+ },
+ {
+  "id": "three-uncles",
+  "name": "Three Uncles",
+  "type": "lunch",
+  "area": "Camden (Hawley Wharf)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "shanghai"
+  ],
+  "note": "Hong Kong roast-meat counter. Order char siu with lo mein noodles.",
+  "source": {
+   "name": "Time Out London",
+   "url": "https://www.timeout.com/london/restaurants/the-best-restaurants-in-camden"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Chinese",
+  "maps_query": "Three Uncles Camden (Hawley Wharf) London NW1",
+  "tip": "Top floor of the Hawley Wharf food hall",
+  "lat": 51.53552,
+  "lng": -0.1451
+ },
+ {
+  "id": "holy-sheep",
+  "name": "Holy Sheep",
+  "type": "lunch",
+  "area": "Camden (Hawley Wharf)",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider",
+   "shanghai"
+  ],
+  "note": "Build-your-own Yunnan rice-noodle bowls. Go mala broth with dried beancurd roll.",
+  "source": {
+   "name": "Time Out London",
+   "url": "https://www.timeout.com/london/restaurants/holy-sheep"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Chinese",
+  "maps_query": "Holy Sheep Camden (Hawley Wharf) London NW1",
+  "tip": "No vegetarian broth",
+  "lat": 51.53408,
+  "lng": -0.14173
+ },
+ {
+  "id": "kossoff-s",
+  "name": "Kossoff's",
+  "type": "coffee",
+  "area": "Kentish Town",
+  "region": "N",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Bakery on a site that's been a bakery since the 1920s. Order a croissant cup, or the focaccia at lunch.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/kossoffs"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Kossoff's Kentish Town London NW5",
+  "lat": 51.55203,
+  "lng": -0.14262
+ },
+ {
+  "id": "crunch",
+  "name": "Crunch",
+  "type": "lunch",
+  "area": "Soho",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "insider",
+   "new"
+  ],
+  "note": "Ten-seat sandwich counter using thick buttery brioche. Order the patty melt with caramelised onions.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/crunch-soho"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Crunch Soho London W1D",
+  "tip": "Tiny room, but the queue moves fast",
+  "lat": 51.51616,
+  "lng": -0.12532
+ },
+ {
+  "id": "paul-rothe-son",
+  "name": "Paul Rothe & Son",
+  "type": "lunch",
+  "area": "Marylebone",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Old-school family deli making plain white-bread sandwiches. Get the egg mayo, with anchovy if you like.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/guides/best-sandwich-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Paul Rothe & Son Marylebone London W1U",
+  "tip": "Weekday lunch spot; closed Sundays",
+  "lat": 51.51806,
+  "lng": -0.15012
+ },
+ {
+  "id": "panadera",
+  "name": "Panadera",
+  "type": "coffee",
+  "area": "Marylebone",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "new"
+  ],
+  "note": "Filipino bakery doing pandesal, ube bakes and sandos. The corned beef hash sando is the order.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-new-bakeries-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Panadera Marylebone London W1U",
+  "tip": "Soho branch queues are long at weekends",
+  "lat": 51.51476,
+  "lng": -0.14967
+ },
+ {
+  "id": "ar-me-bakery",
+  "name": "Arôme Bakery",
+  "type": "coffee",
+  "area": "Covent Garden",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "French-Asian bakery on Mercer Street. The thick honey butter toast is the cult item.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-new-bakeries-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Arôme Bakery Covent Garden London WC2H",
+  "tip": "Only a handful of tables",
+  "lat": 51.51457,
+  "lng": -0.12186
+ },
+ {
+  "id": "fortitude-bakehouse",
+  "name": "Fortitude Bakehouse",
+  "type": "coffee",
+  "area": "Bloomsbury",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Tiny bakery in the Colonnade mews with excellent buns and pastries. Get the beignet or the kouign-amann.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/Hot-Dinners-recommends/best-bakeries-in-london-bread-pastry-shops"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Fortitude Bakehouse Bloomsbury London WC1N",
+  "tip": "Sells out early at weekends",
+  "lat": 51.52394,
+  "lng": -0.12283
+ },
+ {
+  "id": "bageriet",
+  "name": "Bageriet",
+  "type": "coffee",
+  "area": "Covent Garden",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Tiny Swedish bakery on Rose Street with fika classics. Order a cardamom or cinnamon bun.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/Hot-Dinners-recommends/best-bakeries-in-london-bread-pastry-shops"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Bageriet Covent Garden London WC2E",
+  "lat": 51.51151,
+  "lng": -0.12148
+ },
+ {
+  "id": "miel-bakery",
+  "name": "Miel Bakery",
+  "type": "coffee",
+  "area": "Fitzrovia",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Warren Street patisserie with excellent small bakes. Get the pistachio financier and a double chocolate cookie.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/Hot-Dinners-recommends/best-bakeries-in-london-bread-pastry-shops"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Miel Bakery Fitzrovia London W1T",
+  "lat": 51.51598,
+  "lng": -0.13519
+ },
+ {
+  "id": "fred-bakery",
+  "name": "Fred Bakery",
+  "type": "coffee",
+  "area": "Fitzrovia",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "new"
+  ],
+  "note": "Bun specialist near Oxford Circus. Get a cinnamon bun served warm, or the tiramisu bun.",
+  "source": {
+   "name": "The Good Food Guide",
+   "url": "https://www.thegoodfoodguide.co.uk/where-to-eat/best-bakeries-in-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Fred Bakery Fitzrovia London W1W",
+  "lat": 51.51631,
+  "lng": -0.14368
+ },
+ {
+  "id": "banh-mi-aha",
+  "name": "Banh Mi Aha!",
+  "type": "lunch",
+  "area": "Bloomsbury",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap"
+  ],
+  "note": "Lamb's Conduit Street takeaway making proper Vietnamese baguettes. The special bánh mì is the order.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-banh-mi-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Vietnamese",
+  "maps_query": "Banh Mi Aha! Bloomsbury London WC1N",
+  "lat": 51.51783,
+  "lng": -0.11703
+ },
+ {
+  "id": "maison-bertaux",
+  "name": "Maison Bertaux",
+  "type": "coffee",
+  "area": "Soho",
+  "region": "C",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "London's oldest French patisserie, a Greek Street fixture since 1871. Get the mille-feuille or the strawberry tart.",
+  "source": {
+   "name": "Mes Prestiges",
+   "url": "https://mesprestiges.com/en/london/places/maison-bertaux-soho"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Maison Bertaux Soho London W1D",
+  "tip": "Walk-in only, no bookings",
+  "lat": 51.51047,
+  "lng": -0.13369
+ },
+ {
+  "id": "beigel-bake",
+  "name": "Beigel Bake",
+  "type": "coffee",
+  "area": "Brick Lane, Spitalfields",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Round-the-clock Brick Lane bagel bakery. The hot salt beef beigel with mustard and gherkin is the one.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/reviews/beigel-bake"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bagels",
+  "maps_query": "Beigel Bake Brick Lane London E1",
+  "tip": "Open 24 hours; expect a queue late at night",
+  "lat": 51.51679,
+  "lng": -0.05395
+ },
+ {
+  "id": "banh-mi-k-u-deli",
+  "name": "Banh Mi Kêu Deli",
+  "type": "lunch",
+  "area": "Shoreditch",
+  "region": "E",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap"
+  ],
+  "note": "Old Street bánh mì counter that has run for years. Get the classic, or the Hoi An Deluxe.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-banh-mi-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Vietnamese",
+  "maps_query": "Banh Mi Kêu Deli Shoreditch London EC1V",
+  "lat": 51.52213,
+  "lng": -0.09762
+ },
+ {
+  "id": "cafe-mondo",
+  "name": "Cafe Mondo",
+  "type": "lunch",
+  "area": "Camberwell",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Sandwich bar from the Mondo Sando team. Get the turkey with chipotle butter, or pork and provolone.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/guides/best-sandwich-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Cafe Mondo Camberwell London SE5",
+  "lat": 51.47362,
+  "lng": -0.08595
+ },
+ {
+  "id": "guacamoles",
+  "name": "Guacamoles",
+  "type": "lunch",
+  "area": "Peckham",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Taqueria inside Rye Lane Indoor Market with free guac and salsa. Birria tacos are the standout.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/guacamoles"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Mexican",
+  "maps_query": "Guacamoles Peckham London SE15",
+  "tip": "Check the weekend specials",
+  "lat": 51.47444,
+  "lng": -0.06031
+ },
+ {
+  "id": "silk-road",
+  "name": "Silk Road",
+  "type": "lunch",
+  "area": "Camberwell",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic",
+   "shanghai"
+  ],
+  "note": "Uyghur canteen open since 2008. Order the hand-pulled noodles and cumin lamb skewers.",
+  "source": {
+   "name": "Thatsup",
+   "url": "https://thatsup.co.uk/london/guide/the-best-restaurants-in-camberwell/"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Chinese",
+  "maps_query": "Silk Road Camberwell London SE5",
+  "lat": 51.47145,
+  "lng": -0.09157
+ },
+ {
+  "id": "funchal-bakery",
+  "name": "Funchal Bakery",
+  "type": "coffee",
+  "area": "Stockwell, Brixton",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic",
+   "insider"
+  ],
+  "note": "Portuguese bakery and caff with one of London's best pastéis de nata. Add a salt cod fritter.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/funchal-bakery"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Funchal Bakery Stockwell London SW9",
+  "tip": "Espresso at the bar",
+  "lat": 51.46794,
+  "lng": -0.10771
+ },
+ {
+  "id": "aries-bakehouse",
+  "name": "Aries Bakehouse",
+  "type": "coffee",
+  "area": "Brixton",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Acre Lane bakery with inventive pastries and good sourdough. Try the jerk chicken sausage roll.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/Hot-Dinners-recommends/best-bakeries-in-london-bread-pastry-shops"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Aries Bakehouse Brixton London SW2",
+  "tip": "Open Thu–Sun only",
+  "lat": 51.45305,
+  "lng": -0.12308
+ },
+ {
+  "id": "milk-run",
+  "name": "Milk Run",
+  "type": "coffee",
+  "area": "Balham / Tooting Bec",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider",
+   "new"
+  ],
+  "note": "Bakery from Balham café Milk, with croissants, danishes and toasties. Get a danish with a flat white.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/2024072613433/Gastroblog/Latest-news/milk-run-balham-tooting-bec-bakery-london-open"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Milk Run Balham / Tooting Bec London SW17",
+  "lat": 51.42771,
+  "lng": -0.16605
+ },
+ {
+  "id": "maya-s-bakehouse",
+  "name": "Maya's Bakehouse",
+  "type": "coffee",
+  "area": "Tulse Hill",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Neighbourhood bakery with sourdough and seasonal bakes. Get the spiced bun or the Guinness cake.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-new-bakeries-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Maya's Bakehouse Tulse Hill London SW2",
+  "lat": 51.44726,
+  "lng": -0.11907
+ },
+ {
+  "id": "eric-s",
+  "name": "Eric's",
+  "type": "coffee",
+  "area": "East Dulwich",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Serious little bakery on Upland Road. The croissants are the reason to go; also try the coffee custard morning bun.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-new-bakeries-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Eric's East Dulwich London SE22",
+  "tip": "Filter coffee only",
+  "lat": 51.45472,
+  "lng": -0.07404
+ },
+ {
+  "id": "lulu-s",
+  "name": "Lulu's",
+  "type": "coffee",
+  "area": "Herne Hill",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Deli by day, wine bar by night. Get the mortadella, pistachio and rocket ciabatta at lunch.",
+  "source": {
+   "name": "Country & Town House",
+   "url": "https://www.countryandtownhouse.com/food-and-drink/herne-hill-food-guide/"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Lulu's Herne Hill London SE24",
+  "tip": "Shop and café open Tue–Sun",
+  "lat": 51.45049,
+  "lng": -0.0995
+ },
+ {
+  "id": "m-manze",
+  "name": "M. Manze",
+  "type": "lunch",
+  "area": "Bermondsey",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Tiled pie and mash shop open since 1902. Order pie, mash and liquor, then the ice cream.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/m-manze-tower-bridge"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "British",
+  "maps_query": "M. Manze Bermondsey London SE1",
+  "lat": 51.49733,
+  "lng": -0.08869
+ },
+ {
+  "id": "the-beefsteaks",
+  "name": "The Beefsteaks",
+  "type": "lunch",
+  "area": "Bermondsey (Maltby Street Market)",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Market stall grilling British bavette. Get the steak sarnie with watercress and onion marmalade.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/Hot-Dinners-recommends/best-sandwiches-london-delivery-takeaway-restaurants-cafes-rolls-bagels"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "The Beefsteaks Bermondsey (Maltby Street Market) London SE1",
+  "tip": "Weekends only at Maltby Street Market",
+  "lat": 51.502,
+  "lng": -0.0872
+ },
+ {
+  "id": "daddy-bao",
+  "name": "Daddy Bao",
+  "type": "lunch",
+  "area": "Tooting",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Tiny Taiwanese bao bar from the Mr Bao family. Get the pork belly bao and the fried chicken.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/reviews/daddy-bao"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Taiwanese",
+  "maps_query": "Daddy Bao Tooting London SW17",
+  "tip": "Very small; book or expect a wait",
+  "lat": 51.43042,
+  "lng": -0.16142
+ },
+ {
+  "id": "tooting-market",
+  "name": "Tooting Market",
+  "type": "lunch",
+  "area": "Tooting",
+  "region": "S",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Covered market full of small stalls. Get Pepi's Guyanese saltfish bake, or jerk chicken from The Lone Fisherman.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/tooting-market"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Street food",
+  "maps_query": "Tooting Market Tooting London SW17",
+  "tip": "Each stall keeps its own hours",
+  "lat": 51.43171,
+  "lng": -0.16818
+ },
+ {
+  "id": "sam-sandwiches",
+  "name": "Sam Sandwiches",
+  "type": "lunch",
+  "area": "Shepherd's Bush Market",
+  "region": "W",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Algerian street-food sandwiches loaded with chips, fried egg and harissa. Get the minced beef sandwich.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/sam-sandwiches"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Sam Sandwiches Shepherd's Bush Market London W12",
+  "lat": 51.51097,
+  "lng": -0.22554
+ },
+ {
+  "id": "mr-falafel",
+  "name": "Mr Falafel",
+  "type": "lunch",
+  "area": "Shepherd's Bush Market",
+  "region": "W",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "iconic"
+  ],
+  "note": "Palestinian falafel stall with about a dozen wraps. Get the deluxe, with fried cauliflower and crispy potato.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/mr-falafel"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Middle Eastern",
+  "maps_query": "Mr Falafel Shepherd's Bush Market London W12",
+  "lat": 51.51077,
+  "lng": -0.22533
+ },
+ {
+  "id": "secret-sandwich-shop",
+  "name": "Secret Sandwich Shop",
+  "type": "lunch",
+  "area": "Notting Hill",
+  "region": "W",
+  "slot": "day",
+  "dress": 1,
+  "spend": 2,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Japanese-style sandos on soft milk bread. Get the tuna mayo with salt and vinegar crisps added.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/secret-sandwich-shop"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Secret Sandwich Shop Notting Hill London W11",
+  "lat": 51.51103,
+  "lng": -0.20545
+ },
+ {
+  "id": "layla-bakery",
+  "name": "Layla Bakery",
+  "type": "coffee",
+  "area": "Notting Hill",
+  "region": "W",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Portobello Road bakery with inventive pastries. The strawberry jam and cream bow tie is the order.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-new-bakeries-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bakery",
+  "maps_query": "Layla Bakery Notting Hill London W10",
+  "lat": 51.51786,
+  "lng": -0.21236
+ },
+ {
+  "id": "kuro-bakery",
+  "name": "Kuro Bakery",
+  "type": "coffee",
+  "area": "Notting Hill",
+  "region": "W",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap"
+  ],
+  "note": "Japanese-leaning bakery doing shokupan and filled bagels. Get the croissant bread and butter pudding.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://theinfatuation.com/london/guides/best-new-bakeries-london"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Bagels",
+  "maps_query": "Kuro Bakery Notting Hill London W11",
+  "lat": 51.50839,
+  "lng": -0.20943
+ },
+ {
+  "id": "happy-sky-bakery",
+  "name": "Happy Sky Bakery",
+  "type": "coffee",
+  "area": "Askew Road, Shepherd's Bush",
+  "region": "W",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Small Japanese bakery known for milk loaves. Get a sando, or a matcha mochi bow.",
+  "source": {
+   "name": "Hot Dinners",
+   "url": "https://www.hot-dinners.com/Features/Hot-Dinners-recommends/best-bakeries-in-london-bread-pastry-shops"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Sandwiches",
+  "maps_query": "Happy Sky Bakery Askew Road London W12",
+  "lat": 51.50544,
+  "lng": -0.23295
+ },
+ {
+  "id": "tacos-mx",
+  "name": "Tacos MX",
+  "type": "lunch",
+  "area": "Fulham",
+  "region": "W",
+  "slot": "day",
+  "dress": 1,
+  "spend": 1,
+  "tags": [
+   "cheap",
+   "insider"
+  ],
+  "note": "Takeaway taco window on Lillie Road. The Baja fish taco is the one to order.",
+  "source": {
+   "name": "The Infatuation",
+   "url": "https://www.theinfatuation.com/london/reviews/tacos-mx-fulham"
+  },
+  "status": "active",
+  "added": "2026-10-26",
+  "cuisine": "Mexican",
+  "maps_query": "Tacos MX Fulham London SW6",
+  "tip": "About 15 minutes' wait; very little seating",
+  "lat": 51.47547,
+  "lng": -0.20523
  }
 ]

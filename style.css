@@ -122,3 +122,4 @@ footer{padding-block:40px;color:var(--muted);font-size:13px;text-align:center}
 .ready h2{margin-top:44px}
 /* soften the map tiles to sit in the cream/plum palette */
 #map .leaflet-tile-pane{filter:grayscale(.85) sepia(.18) contrast(.92) brightness(1.04)}
+.datepick{display:block;margin:-6px 0 16px;font:300 15px var(--body);padding:10px 14px;border-radius:999px;border:1px solid var(--line);background:var(--paper);color:var(--ink)}
