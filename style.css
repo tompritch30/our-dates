@@ -120,3 +120,5 @@ footer{padding-block:40px;color:var(--muted);font-size:13px;text-align:center}
 .flagx{font:400 11px var(--body);color:var(--muted);letter-spacing:.08em;text-transform:uppercase}
 .bar .n{color:var(--cream);text-decoration:underline;text-decoration-color:rgba(244,237,232,.4);text-underline-offset:4px}
 .ready h2{margin-top:44px}
+/* soften the map tiles to sit in the cream/plum palette */
+#map .leaflet-tile-pane{filter:grayscale(.85) sepia(.18) contrast(.92) brightness(1.04)}
