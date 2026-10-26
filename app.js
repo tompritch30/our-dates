@@ -33,6 +33,9 @@
   const TRAVEL = C.planner.travel;
   const MODE = Object.fromEntries(TRAVEL.modes.map(m => [m.id, m]));
   const SITE = location.origin + location.pathname;
+  /* short, stable 4-char code per place id (for compact links) */
+  const code = id => { let h = 5381; for (const c of id) h = ((h * 33) ^ c.charCodeAt(0)) >>> 0; return h.toString(36).slice(-4).padStart(4, "0"); };
+  const FROM_CODE = Object.fromEntries(Object.keys(ALL).map(id => [code(id), id]));
 
   /* ---------- rules ---------- */
   function match(p, rule) {
@@ -155,11 +158,28 @@
     return a.region === "SY" ? `${whenLabel()} in ${a.area}` : `${whenLabel()} around ${a.area}`;
   }
   /* a plan as a portable object: what links and saves carry */
-  const planObj = (title, stops, extra = {}) => Object.assign({ t: title, m: ask.travel, s: stops }, extra);
+  const planObj = (title, stops, extra = {}) => Object.assign({ t: title, m: ask.travel, w0: ask.when, s: stops }, extra);
   const fromGenerated = plan => planObj(planTitle(plan), plan.map(x => [x.place.id, x.step.time]));
-  const fromReady = rp => planObj(rp.title, rp.steps.map(s => [s.place || s.text, s.time, s.what || ""]), { w: rp.why });
+  const fromReady = rp => planObj(rp.title, rp.steps.map(s => [s.place || s.text, s.time, s.what || ""]), { w: rp.why, r: rp.id });
   const planLines = o => o.s.map(([id, time]) => `${time}  ${ALL[id]?.name || id}`);
-  const planLink = (o, extra = {}) => SITE + "#plan=" + b64e(Object.assign({}, o, extra));
+  /* compact links: #r=<ready id>~<yyyymmdd>  or  #g=<when><mode>.<code><hhmm>.<code><hhmm>~<yyyymmdd> */
+  const encodeTail = d => d ? "~" + d.replace(/-/g, "") : "";
+  function planHash(o, d) {
+    if (o.r) return "#r=" + o.r + encodeTail(d);
+    return "#g=" + (o.w0 || "e")[0] + (o.m || "c")[0] + "." + o.s.map(([id, t]) => code(id) + String(t).replace(":", "")).join(".") + encodeTail(d);
+  }
+  const planLink = (o, extra = {}) => SITE + planHash(o, extra.d);
+  const WHEN_BY = { e: "eve", d: "day", f: "full", i: "in" }, MODE_BY = Object.fromEntries(TRAVEL.modes.map(m => [m.id[0], m.id]));
+  function decodeHash(h) {
+    const [body, dt] = h.split("~"), d = dt ? dt.slice(0, 4) + "-" + dt.slice(4, 6) + "-" + dt.slice(6, 8) : undefined;
+    if (body.startsWith("r=")) { const rp = PLANS.find(x => x.id === body.slice(2)); return rp ? Object.assign(fromReady(rp), { d }) : null; }
+    const [hd, ...stops] = body.slice(2).split(".");
+    const s = stops.map(x => [FROM_CODE[x.slice(0, 4)] || x.slice(0, 4), x.slice(4, 6) + ":" + x.slice(6, 8)]);
+    const when = WHEN_BY[hd[0]] || "eve", first = ALL[s.find(x => ALL[x[0]] && ALL[x[0]].type !== "drinks")?.[0] || s[0][0]];
+    const label = (qOf("when").options.find(o => o.id === when) || {}).label || "A date";
+    const t = when === "in" ? "A night in" : first ? `${label} around ${first.area}` : label;
+    return { t, m: MODE_BY[hd[1]] || TRAVEL.default, s, d };
+  }
 
   /* ---------- picks ---------- */
   let picks = store.get("picks2", []);              /* [{k:'place',id} | {k:'plan', o}] */
@@ -383,7 +403,7 @@
     const msg = () => {
       const d = $("#req-date").value, n = $("#req-note").value.trim();
       const day = d ? new Date(d + "T12:00").toLocaleDateString("en-GB", { weekday: "long", day: "numeric", month: "long" }) : "Any day soon";
-      return `${C.copy.requestMessage}\n${o.t}\n${day}\n\n${planLines(o).join("\n")}${n ? "\n\n" + n : ""}\n\nLinks and booking: ${planLink(o, { d: d || undefined, n: n || undefined })}`;
+      return `${C.copy.requestMessage}\n${o.t}\n${day}\n\n${planLines(o).join("\n")}${n ? "\n\n" + n : ""}\n\nLinks and booking: ${planLink(o, { d: d || undefined })}`;
     };
     const upd = () => { $("#req-send").href = waHref(msg()); };
     $("#req-date").oninput = upd; $("#req-note").oninput = upd; upd();
@@ -391,7 +411,10 @@
   }
 
   /* ---------- saved ---------- */
-  const savedLink = () => SITE + "#saved=" + b64e(picks.map(x => x.k === "place" ? x.id : x.o));
+  const savedLink = () => SITE + "#s=" + picks.map(x => x.k === "place" ? code(x.id) : planHash(x.o).slice(1).replace(/\./g, ",")).join(".");
+  function decodeSaved(body) {
+    return body.split(".").map(x => x.length === 4 ? FROM_CODE[x] : decodeHash(x.replace(/,/g, "."))).filter(Boolean);
+  }
   function picksText() {
     const lines = picks.map(x => x.k === "place" ? "• " + (ALL[x.id]?.name || x.id) : "• " + x.o.t);
     return `${C.copy.picksMessage}\n\n${lines.join("\n")}\n\nAll the details: ${savedLink()}`;
@@ -445,7 +468,9 @@
   function openFromHash() {
     const h = location.hash;
     try {
-      if (h.startsWith("#plan=")) planView(b64d(h.slice(6)));
+      if (h.startsWith("#g=") || h.startsWith("#r=")) { const o = decodeHash(h.slice(1)); if (o) planView(o); else throw 0; }
+      else if (h.startsWith("#s=")) savedView(decodeSaved(h.slice(3)));
+      else if (h.startsWith("#plan=")) planView(b64d(h.slice(6)));
       else if (h.startsWith("#saved=")) savedView(b64d(h.slice(7)));
     } catch (e) { toast("That link didn't open. Ask for a fresh one."); }
   }
