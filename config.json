@@ -254,8 +254,8 @@
    -0.11
   ],
   "zoom": 12,
-  "tiles": "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
-  "attribution": "© OpenStreetMap contributors © CARTO"
+  "tiles": "https://a.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png",
+  "attribution": "© OpenStreetMap France · © OpenStreetMap contributors"
  },
  "planner": {
   "questions": [
